@@ -1,28 +1,9 @@
+function processForm() {
+    var name = document.getElementById("name").value
+    var age = document.getElementById("age").value
+    var hobby = document.getElementById("hobby").value
 
-function hideDivById(divId) {
-    hideAllDivW3Includes()
-    var element = document.getElementById(divId)
-    if (element.style.display === "none") {
-        element.style.display = "block"
-    }
-}
-
-function hideAllDivW3Includes() {
-    var elementArray = document.getElementsByName("pages")
-    for (var element of elementArray) {
-        element.style.display = "none"
-    }
-}
-
-w3.includeHTML()
-
-//Send Contact email
-function sendEMail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    alert("De: " + name + " <" + email + "> \nMensaje:\n" + message);
+    alert("Hello, my name is: " + name + ", i have " + age + " years of age and my hobby is: " + hobby)
 
 }
 

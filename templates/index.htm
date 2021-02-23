@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>Register my hobbies</h1>
+
+
+    <h2>please, fill the information bellow</h2>
+    <br>
+    <label for="">Name</label>
+    <input type="text" name="name" id="name" placeholder="Insert your name">
+    <br>
+    <label for="">Age</label>
+    <input type="text" name="age" id="age" placeholder="Insert your age">
+    <br>
+    <label for="hobbies">Choose a hobby:</label>
+    <br><br>
+    <select id="hobbies">
+        <option label="sleeping">sleeping</option>
+        <option label="eating">eating</option>
+        <option label="singing">singing</option>
+        <option label="gaming">gaming</option>
+        <option label="working out">working out</option>
+    </select>
+    <br>
+
+    <button id="hobbies" onclick="processForm()"> Procesar </button>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
